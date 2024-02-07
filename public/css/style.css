@@ -1,0 +1,122 @@
+body {
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+}
+/*
+ * header
+ */
+header {
+    position: relative;
+    padding: 6rem 0;
+    background-image: url("../images/header.jpg");
+    opacity: 0.9;
+    width: 100vw;
+    overflow: hidden;
+    background-size: cover;
+    margin-bottom: 5rem;
+}
+
+/*
+ * search
+ */
+.searchBox {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+}
+
+.searchResult {
+    width: 100%;
+    max-height: 60vh;
+    overflow-y: auto;
+}
+.searchResult li a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-decoration: none;
+}
+.searchResult li {
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+}
+.searchResult li p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #333;
+    font-size: 1rem;
+}
+.searchResult li p span {
+    color: #727272;
+    font-style: italic;
+    font-size: 0.7rem;
+}
+
+/*
+ * image book
+ */
+.imgBook {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+}
+
+/*
+ * login
+ */
+.sign {
+    width: 100%;
+    height: calc(100vh - 10vh);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+}
+.form-signin .checkbox {
+    font-weight: 400;
+}
+.form-signin .form-control {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+}
+.form-signin .form-control:focus {
+    z-index: 2;
+}
+.form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+/*
+ * Footer
+ */
+.site-footer {
+    padding: 2.5rem 0;
+    color: #727272;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-top: 0.05rem solid #e5e5e5;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
